@@ -1,0 +1,176 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecera {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+header {
+  position: absolute;
+  width: 375px;
+  height: 96px;
+  left: 0px;
+  top: 0px;
+}
+
+.img-input {
+  width: 150px;
+  height: 150px;
+}
+
+body {
+  background: #e5e5e5;
+}
+/* Vector */
+
+.vector {
+  width: 31.09px;
+  height: 48px;
+  position: absolute;
+  /* left: 36.67%;
+    right: 37.43%; */
+  top: 0%;
+  bottom: 0%;
+}
+
+#texto-encriptar {
+  position: absolute;
+  width: 680px;
+  height: 288px;
+  left: 240px;
+  top: 168px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* or 48px */
+}
+
+.ver-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  width: 33%;
+  border-radius: 32px;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  color: var(--color-text);
+  line-height: 120%;
+  text-align: center;
+}
+
+html {
+  font-size: 100%;
+}
+
+.info {
+  color: var(--color-text);
+  font-size: 0.75rem;
+  margin-top: 40%;
+}
+
+.ver-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.icon-exclamacion {
+  display: inline-block;
+  width: 0.75rem;
+}
+
+#bt {
+  
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  /* Dark blue/dark-blue-300 */
+
+  background: #0a3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh;
+
+  gap: 1rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+
+  resize: none;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  padding: 1rem;
+}
+
+/* =========================== */
+/* ==== Tablet responsive ==== */
+
+@media screen and (max-width: 940px) {
+  header h1 {
+    width: 5%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .cabecera {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .ver-section {
+    width: 100%;
+    min-height: 150px;
+  }
+
+  .ver-section .img-input {
+    display: none !important;
+  }
+}
+
+/* ==== Mobil responsive ==== */
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 75%;
+  }
+
+  body {
+    padding: 0 1rem;
+  }
+
+  .input-section .buttons {
+    flex-direction: column;
+  }
+
+}
